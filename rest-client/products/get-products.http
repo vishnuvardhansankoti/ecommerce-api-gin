@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:8080
+
+### List all products
+GET {{baseUrl}}/api/v1/products
+
+### List products by category
+GET {{baseUrl}}/api/v1/products?category_id=1
+
+### Get product by id
+GET {{baseUrl}}/api/v1/products/1

@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:8080
+
+### Create order for customer 1
+POST {{baseUrl}}/api/v1/orders
+Content-Type: application/json
+
+{
+	"customer_id": 1,
+	"items": [
+		{
+			"product_id": 1,
+			"quantity": 2
+		},
+		{
+			"product_id": 2,
+			"quantity": 1
+		}
+	]
+}
+
+### Create order for customer 2
+POST {{baseUrl}}/api/v1/orders
+Content-Type: application/json
+
+{
+	"customer_id": 2,
+	"items": [
+		{
+			"product_id": 3,
+			"quantity": 1
+		}
+	]
+}

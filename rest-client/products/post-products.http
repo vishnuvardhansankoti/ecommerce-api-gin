@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:8080
+
+### Create Wireless Mouse
+POST {{baseUrl}}/api/v1/products
+Content-Type: application/json
+
+{
+	"name": "Wireless Mouse",
+	"description": "Bluetooth ergonomic mouse",
+	"sku": "MOUSE-1001",
+	"price": 49.99,
+	"stock": 100,
+	"category_id": 1
+}
+
+### Create Mechanical Keyboard
+POST {{baseUrl}}/api/v1/products
+Content-Type: application/json
+
+{
+	"name": "Mechanical Keyboard",
+	"description": "RGB keyboard with tactile switches",
+	"sku": "KEY-2000",
+	"price": 89.99,
+	"stock": 60,
+	"category_id": 1
+}
+
+### Create Running Shoes
+POST {{baseUrl}}/api/v1/products
+Content-Type: application/json
+
+{
+	"name": "Running Shoes",
+	"description": "Lightweight running shoes",
+	"sku": "SHOE-3000",
+	"price": 79.50,
+	"stock": 45,
+	"category_id": 2
+}

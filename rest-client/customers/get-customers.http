@@ -1,0 +1,7 @@
+@baseUrl = http://localhost:8080
+
+### List all customers
+GET {{baseUrl}}/api/v1/customers
+
+### Get customer by id
+GET {{baseUrl}}/api/v1/customers/1

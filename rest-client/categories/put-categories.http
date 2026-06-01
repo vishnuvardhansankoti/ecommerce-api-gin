@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:8080
+
+### Update category 1 - Electronics and Gadgets
+PUT {{baseUrl}}/api/v1/categories/1
+Content-Type: application/json
+
+{
+	"name": "Electronics and Gadgets",
+	"description": "Smartphones, laptops, wearables, and accessories"
+}
+
+### Update category 2 - Fashion and Lifestyle
+PUT {{baseUrl}}/api/v1/categories/2
+Content-Type: application/json
+
+{
+	"name": "Fashion and Lifestyle",
+	"description": "Clothing, footwear, and everyday style essentials"
+}
+
+### Update category 3 - Home Essentials
+PUT {{baseUrl}}/api/v1/categories/3
+Content-Type: application/json
+
+{
+	"name": "Home Essentials",
+	"description": "Kitchenware, furnishings, storage, and cleaning supplies"
+}

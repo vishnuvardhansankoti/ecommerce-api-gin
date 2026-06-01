@@ -1,0 +1,55 @@
+@baseUrl = http://localhost:8080
+
+### Create Electronics category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Electronics",
+	"description": "Phones, laptops, tablets, and accessories"
+}
+
+### Create Fashion category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Fashion",
+	"description": "Men, women, and kids apparel"
+}
+
+### Create Home and Kitchen category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Home and Kitchen",
+	"description": "Cookware, decor, storage, and cleaning essentials"
+}
+
+### Create Sports category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Sports",
+	"description": "Fitness gear, outdoor equipment, and team sports items"
+}
+
+### Create Books category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Books",
+	"description": "Fiction, non-fiction, educational, and reference books"
+}
+
+### Create Health and Beauty category
+POST {{baseUrl}}/api/v1/categories
+Content-Type: application/json
+
+{
+	"name": "Health and Beauty",
+	"description": "Skincare, grooming, wellness, and personal care"
+}

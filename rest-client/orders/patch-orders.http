@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8080
+
+### Update order 1 status to confirmed
+# Note: Orders are updated via PATCH /api/v1/orders/:id/status in this API.
+PATCH {{baseUrl}}/api/v1/orders/1/status
+Content-Type: application/json
+
+{
+	"status": "confirmed"
+}
+
+### Update order 1 status to shipped
+PATCH {{baseUrl}}/api/v1/orders/1/status
+Content-Type: application/json
+
+{
+	"status": "shipped"
+}
+
+### Update order 2 status to cancelled
+PATCH {{baseUrl}}/api/v1/orders/2/status
+Content-Type: application/json
+
+{
+	"status": "cancelled"
+}

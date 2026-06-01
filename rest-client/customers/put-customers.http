@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:8080
+
+### Update customer 1
+PUT {{baseUrl}}/api/v1/customers/1
+Content-Type: application/json
+
+{
+	"first_name": "Alex",
+	"last_name": "Johnson",
+	"email": "alex@example.com",
+	"phone": "+1-555-555-9898",
+	"address": "700 Sunset Blvd, Los Angeles, CA"
+}
+
+### Update customer 2
+PUT {{baseUrl}}/api/v1/customers/2
+Content-Type: application/json
+
+{
+	"first_name": "Priya",
+	"last_name": "Rao",
+	"email": "priya@example.com",
+	"phone": "+1-555-555-7878",
+	"address": "450 River Road, Seattle, WA"
+}

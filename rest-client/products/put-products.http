@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:8080
+
+### Update product 1
+PUT {{baseUrl}}/api/v1/products/1
+Content-Type: application/json
+
+{
+	"name": "Wireless Mouse Pro",
+	"description": "Bluetooth ergonomic mouse with silent clicks",
+	"sku": "MOUSE-1001",
+	"price": 54.99,
+	"stock": 90,
+	"category_id": 1
+}
+
+### Update product 2
+PUT {{baseUrl}}/api/v1/products/2
+Content-Type: application/json
+
+{
+	"name": "Mechanical Keyboard V2",
+	"description": "Hot-swappable RGB keyboard",
+	"sku": "KEY-2000",
+	"price": 94.99,
+	"stock": 55,
+	"category_id": 1
+}

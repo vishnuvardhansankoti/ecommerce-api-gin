@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:8080
+
+### Delete customer 1
+DELETE {{baseUrl}}/api/v1/customers/1
+
+### Delete customer 2
+DELETE {{baseUrl}}/api/v1/customers/2
+
+### Delete customer 3
+DELETE {{baseUrl}}/api/v1/customers/3

@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:8080
+
+### List all orders
+GET {{baseUrl}}/api/v1/orders
+
+### List orders filtered by status
+GET {{baseUrl}}/api/v1/orders?status=pending
+
+### Get order by id
+GET {{baseUrl}}/api/v1/orders/1

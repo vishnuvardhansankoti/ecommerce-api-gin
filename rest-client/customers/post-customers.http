@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:8080
+
+### Create customer Alex
+POST {{baseUrl}}/api/v1/customers
+Content-Type: application/json
+
+{
+	"first_name": "Alex",
+	"last_name": "Johnson",
+	"email": "alex@example.com",
+	"phone": "+1-555-555-1212",
+	"address": "101 Market Street, Austin, TX"
+}
+
+### Create customer Priya
+POST {{baseUrl}}/api/v1/customers
+Content-Type: application/json
+
+{
+	"first_name": "Priya",
+	"last_name": "Rao",
+	"email": "priya@example.com",
+	"phone": "+1-555-555-2323",
+	"address": "22 Lake View, San Jose, CA"
+}
