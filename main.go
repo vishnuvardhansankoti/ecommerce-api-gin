@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"log"
 
 	_ "ecommerce-api-gin/docs"
@@ -23,10 +22,6 @@ func main() {
 		log.Fatalf("database connection failed: %v", err)
 	}
 	defer db.Close()
-
-	if err := database.RunMigrations(context.Background(), db); err != nil {
-		log.Fatalf("database migration failed: %v", err)
-	}
 
 	r := router.New(db)
 

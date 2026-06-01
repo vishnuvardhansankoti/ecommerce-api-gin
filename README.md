@@ -48,15 +48,16 @@ Sample REST API for an e-commerce portal built with:
 ## Run locally
 
 1. Create a PostgreSQL database named `ecommerce`.
-2. Copy `.env.example` values into your environment.
-3. Install dependencies and start the server:
+2. Create the `portaldb` schema and tables by running [scripts/001_init_schema.sql](scripts/001_init_schema.sql) or by applying your own equivalent migration.
+3. Copy `.env.example` values into your environment.
+4. Install dependencies and start the server:
 
 ```bash
 go mod tidy
 go run .
 ```
 
-The application applies schema migrations on startup.
+The application expects the schema to exist before startup.
 
 ## Database scripts
 
